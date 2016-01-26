@@ -2,7 +2,7 @@
 @import 'libs/functions';
 @import 'libs/mixins';
 @import url('font-awesome.min.css');
-@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
 
 /*
 	Alpha by HTML5 UP
@@ -39,8 +39,16 @@
 			),
 		)
 	));
+	
 
 /* Basic */
+
+	// Smooth scrolling
+	body {
+		-webkit-overflow-scrolling: touch;
+		scroll-behavior: smooth;
+		overflow-x: scroll;
+	}
 
 	body {
 		background: _palette(bg);
@@ -1012,6 +1020,10 @@
 						line-height: 1.95em;
 						padding: 0 1em;
 						border-radius: _size(border-radius);
+						
+						&.active:not(.button) {
+							background-color: transparentize(_palette(header, fg-light), 0.75);
+						}
 					}
 
 					a:not(.button) {
@@ -1184,15 +1196,19 @@
 /* Banner */
 
 	#banner {
-		background-attachment:	scroll,							fixed;
 		background-color:		#666;
-		background-image:		url('images/overlay.png'),		url('../../images/banner.jpg');
-		background-position:	top left,						center center;
-		background-repeat:		repeat,							no-repeat;
-		background-size:		auto,							cover;
+		background-image:		url('../../images/bg-01.jpg');
+		background-position:	center center;
+		background-attachment:	fixed;
+		background-size:		cover;
+		
 		color: #fff;
 		padding: 12em 0 20em 0;
 		text-align: center;
+		
+		.overlay {
+			background-attachment: fixed;
+		}
 
 		:last-child {
 			margin-bottom: 0;
@@ -1239,6 +1255,17 @@
 	}
 
 /* Main */
+
+/* Custom Section */
+#what-img {
+	height: 300px;
+	width: 100%;
+	
+	background-image:		url('../../images/03.jpg');
+	background-position:	center center;
+	background-attachment:	fixed;
+	background-size:		cover;
+}
 
 	#main {
 		padding: 4em 0;
@@ -1318,7 +1345,12 @@
 /* CTA */
 
 	#cta {
-		background: _palette(accent2, bg);
+		background-color:		#666;
+		background-image:		url('../../images/contact-bg.png');
+		background-position:	center center;
+		background-attachment:	fixed;
+		background-size:		cover;
+		
 		color: _palette(accent2, fg);
 		padding: 3.5em 0 4em 0;
 		text-align: center;
@@ -1416,7 +1448,7 @@
 		/* Banner */
 
 			#banner {
-				background-attachment: scroll;
+				background-attachment: fixed;
 
 				h2 {
 					font-size: 3.5em;

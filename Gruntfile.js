@@ -61,7 +61,7 @@ module.exports = function(grunt) {
             },
             dist: {
                 files: {
-                    '<%= app_path %>/sass/**/*.scss': '<%= app_path %>/css/main.scss'
+                    '<%= app_path %>/css/main.css': '<%= app_path %>/sass/main.scss' 
                 }
             }
         },
