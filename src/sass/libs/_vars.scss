@@ -19,10 +19,12 @@
 
 // Font.
 	$font: (
-		family:				('Source Sans Pro', sans-serif),
+		family-logo:		('Montserrat', sans-serif),
+		family-headings:	('Montserrat', sans-serif),
+		family-body:		('Source Sans Pro', sans-serif),
 		family-fixed:		monospace,
-		weight:				300,
-		weight-bold:		400,
+		weight:				400,
+		weight-bold:		700,
 	);
 
 // Palette.

@@ -1,5 +1,8 @@
 @import url("font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
+@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300");
+@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700");
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 /*
 	Alpha by HTML5 UP
 	html5up.net | @n33co
@@ -1116,7 +1119,7 @@ body, input, select, textarea {
   color: #777;
   font-family: "Source Sans Pro", sans-serif;
   font-size: 16pt;
-  font-weight: 300;
+  font-weight: 400;
   line-height: 1.65em;
   letter-spacing: -0.015em; }
 
@@ -1132,8 +1135,7 @@ a {
     border-bottom-color: transparent; }
 
 strong, b {
-  color: #646464;
-  font-weight: 400; }
+  font-weight: 700; }
 
 em, i {
   font-style: italic; }
@@ -1143,9 +1145,10 @@ p {
 
 h1, h2, h3, h4, h5, h6 {
   color: #646464;
-  font-weight: 300;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 700;
   line-height: 1em;
-  margin: 0 0 0.5em 0; }
+  margin: 0 0 0.8em 0; }
   h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {
     color: inherit;
     text-decoration: none; }
@@ -1156,7 +1159,7 @@ h2 {
   letter-spacing: -0.035em; }
 
 h3 {
-  font-size: 1.75em;
+  font-size: 1.7em;
   line-height: 1.5em;
   letter-spacing: -0.025em; }
 
@@ -1268,6 +1271,13 @@ header.major {
     padding: 1.5em 0 0 0;
     font-style: normal; }
 
+h2.logo {
+  font-family: "Montserrat", sans-serif; }
+
+nav, ul.actions {
+  text-transform: uppercase;
+  font-family: "Montserrat", sans-serif; }
+
 /* Form */
 form {
   margin: 0 0 2em 0; }
@@ -1276,7 +1286,7 @@ label {
   color: #646464;
   display: block;
   font-size: 0.9em;
-  font-weight: 300;
+  font-weight: 400;
   margin: 0 0 1em 0; }
 
 input[type="text"],
@@ -1365,7 +1375,7 @@ input[type="radio"] {
     cursor: pointer;
     display: inline-block;
     font-size: 1em;
-    font-weight: 300;
+    font-weight: 400;
     padding-left: 2.55em;
     padding-right: 0.75em;
     position: relative; }
@@ -1667,7 +1677,7 @@ table {
   table th {
     color: #646464;
     font-size: 0.9em;
-    font-weight: 300;
+    font-weight: 400;
     padding: 0 0.75em 0.75em 0.75em;
     text-align: left; }
   table thead {
@@ -1708,7 +1718,7 @@ input[type="button"],
   color: #ffffff;
   cursor: pointer;
   display: inline-block;
-  font-weight: 400;
+  font-weight: 700;
   height: 3em;
   line-height: 3em;
   padding: 0 2em;
@@ -1849,6 +1859,15 @@ body.landing #page-wrapper {
   top: 0;
   width: 100%;
   z-index: 10000; }
+  #header .logo {
+    height: 100%; }
+    #header .logo img {
+      height: 28px;
+      -webkit-filter: invert(100%); }
+    #header .logo h1 {
+      margin-left: 30px;
+      font-family: 'Helvetica';
+      text-transform: uppercase; }
   #header h1 {
     color: inherit;
     height: inherit;
@@ -1860,7 +1879,7 @@ body.landing #page-wrapper {
     top: 0; }
     #header h1 a {
       color: #fff;
-      font-weight: 400;
+      font-weight: 700;
       border: 0; }
   #header nav {
     height: inherit;
@@ -2028,6 +2047,11 @@ body.landing #page-wrapper {
   #banner p {
     font-size: 1.25em;
     margin-bottom: 1.75em; }
+  #banner .banner-logo {
+    margin: 0 auto; }
+    #banner .banner-logo img {
+      min-width: 37%;
+      opacity: 0.85; }
   #banner input[type="submit"],
   #banner input[type="reset"],
   #banner input[type="button"],
@@ -2170,7 +2194,7 @@ body.landing #main {
     font-size: 13pt; }
   /* Banner */
   #banner {
-    padding: 10em 0 18em 0; } }
+    padding: 6em 0 18em 0; } }
 
 /* Normal */
 @media screen and (max-width: 1280px) {

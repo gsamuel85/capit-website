@@ -11,6 +11,7 @@
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
 	<link rel="stylesheet" href="css/main.css" />
+	<link href="../images/logo/favicon.png" rel="shortcut icon" type="image/png" />
 </head>
 
 <body class="landing">
@@ -18,7 +19,12 @@
 
 		<!-- Header -->
 		<header id="header" class="reveal alt">
-			<h1><a href="index.html">Capit</a> Mobile</h1>
+			<div class="logo">
+				<img src="../images/logo/favicon.png"/>
+				<h1> <a href="index.html">Capit</a> Mobile</h1>
+			</div>
+			
+			
 			<nav id="nav">
 				<ul class="scrollspy-nav">
 					<li><a href="#banner">Home</a></li>
@@ -33,8 +39,10 @@
 		<!-- Banner -->
 		<div id="banner">
 			<div class="overlay">
-				<h2>Capit Mobile</h2>
-				<p>How can we help your business grow?</p>
+				<div class="banner-logo">
+					<img src="../images/logo/logo-h.png" />
+				</div>
+				<p>Helping your business grow</p>
 				<ul class="actions">
 					<li><a href="#how-section" class="button">Mobile & Web</a></li>
 					<li><a href="#why-section" class="button">Why Capit?</a></li>
@@ -49,7 +57,7 @@
 			<section id="what-section" class="box special">
 				<header class="major">
 					<h2>Apps and Web Platforms for your business</h2>
-					<p>Capit Mobile creates complete mobile solutions, including apps and websites, for small and medium businesses. We specialise in making these services accessible, offering a simple development process and ongoing support once your product is released.</p>
+					<p>Capit Mobile creates complete mobile solutions, including apps and web-based services, for businesses of all sizes. We specialise in making these services accessible, offering a simple development process and ongoing support to ensure you reach your goals once your product is released.</p>
 				</header>
 				<div id="what-img">
 					
@@ -65,8 +73,8 @@
 					<div class="4u 12u(narrower)">
 						<span class="icon major fa-hand-o-right accent5"></span>
 						<h3>A Simple Process</h3>
-						<p>Capit's simplified development process is tailored to your unique needs - we propose solutions based on our experience with small businesses. This method leaves you more time to grow your business, and does not require previous experience or technical
-							knowledge.</p>
+						<p>Capit's simplified development process is tailored to your unique needs - we propose solutions based on our experience with various businesses. This method leaves you more time to grow your business, and does not require previous experience or technical
+							expertise.</p>
 					</div>
 					<div class="4u 12u(narrower)">
 						<span class="icon major fa-rocket accent2"></span>
@@ -125,7 +133,7 @@
 			<h2>Get in touch!</h2>
 			<p>Drop us a line for information about projects and services, and consultation about mobilising your business.</p>
 
-			<form>
+			<form id="contact-form">
 				<div class="row uniform 50%">
 					<div class="8u 12u(mobilep)">
 						<input type="email" name="email" id="email" placeholder="Email Address" />
