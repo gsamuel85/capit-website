@@ -1441,6 +1441,13 @@
 		.formerize-placeholder {
 			color: rgba(255,255,255,0.75) !important;
 		}
+		
+		#contact-thanks {
+			display: none;
+			transition: opacity .25s ease-in-out;
+		   -moz-transition: opacity .25s ease-in-out;
+		   -webkit-transition: opacity .25s ease-in-out;
+		}
 	}
 
 /* Wide */

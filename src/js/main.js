@@ -29,11 +29,19 @@ form.addEventListener("submit", function submitContact(e) {
 	contactData.append("email[0]_Value", document.getElementById("email").value);
 	
 	var xhttp = new XMLHttpRequest();
-	xhttp.onreadystatechange = function() {
-	  if (xhttp.readyState === 4 && xhttp.status === 200) {
-	    console.log(xhttp.responseText);
-	  }
-	};
+	// xhttp.onreadystatechange = function() {
+	//   if (xhttp.readyState === 4 && xhttp.status === 200) {
+	  	
+	//     console.log("Contact details sent");
+	//   }
+	// };
 	xhttp.open("POST", "https://googleapps.insight.ly/WebToContact/Create", true);
 	xhttp.send(contactData);
+	
+	// Toggle form / thank you
+	var form = document.getElementById("contact-form");
+	var thanks = document.getElementById("contact-thanks");
+	
+	form.style.display = "none";
+	thanks.style.display = "block";
 });

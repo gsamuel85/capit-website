@@ -2186,6 +2186,11 @@ body.landing #main {
     color: rgba(255, 255, 255, 0.75) !important; }
   #cta .formerize-placeholder {
     color: rgba(255, 255, 255, 0.75) !important; }
+  #cta #contact-thanks {
+    display: none;
+    transition: opacity .25s ease-in-out;
+    -moz-transition: opacity .25s ease-in-out;
+    -webkit-transition: opacity .25s ease-in-out; }
 
 /* Wide */
 @media screen and (max-width: 1680px) {
