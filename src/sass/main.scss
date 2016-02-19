@@ -3,8 +3,6 @@
 @import 'libs/mixins';
 @import url('font-awesome.min.css');
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,300italic,400italic");
-@import url("https://fonts.googleapis.com/css?family=Comfortaa:400,700,300");
-@import url("https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400italic,700");
 @import url("https://fonts.googleapis.com/css?family=Montserrat:400,700");
 
 /*
@@ -990,9 +988,9 @@
 		
 		.logo {
 			height: 100%;
+			padding: 5px;
 			img {
 				height: 28px;
-				-webkit-filter: invert(100%);
 			}
 			h1 {
 			    margin-left: 30px;
@@ -1223,7 +1221,7 @@
 
 	#banner {
 		background-color:		#666;
-		background-image:		url('../../images/bg-01.jpg');
+		background-image:		url('../images/bg.jpg');
 		background-position:	center center;
 		background-attachment:	fixed;
 		background-size:		cover;
@@ -1260,6 +1258,7 @@
 			margin: 0 auto;
 			img {
 				min-width: 37%;
+				max-width: 100%;
 				opacity: 0.85;
 			}
 		}
@@ -1295,7 +1294,7 @@
 	height: 300px;
 	width: 100%;
 	
-	background-image:		url('../../images/03.jpg');
+	background-image:		url('../images/what.jpg');
 	background-position:	center center;
 	background-attachment:	fixed;
 	background-size:		cover;
@@ -1380,7 +1379,7 @@
 
 	#cta {
 		background-color:		#666;
-		background-image:		url('../../images/contact-bg.png');
+		background-image:		url('../images/contact-bg.png');
 		background-position:	center center;
 		background-attachment:	fixed;
 		background-size:		cover;

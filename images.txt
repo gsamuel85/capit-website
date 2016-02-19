@@ -1,12 +1,8 @@
-bg-01: https://unsplash.com/photos/ywnnwzcdR5o
-bg-02: https://unsplash.com/photos/1eWaod96d3k
-bg-03: https://unsplash.com/photos/kt_s46DVgJA
+bg: https://unsplash.com/photos/ywnnwzcdR5o
 
-about-01: https://unsplash.com/photos/1uxV8fAfhVM
+what: https://unsplash.com/photos/nJdwUHmaY8A
+
+about-01: https://unsplash.com/photos/BbQLHCpVUqA
 about-02: https://unsplash.com/photos/a2NRu2Wxa2o
 
-01: https://unsplash.com/photos/gp8BLyaTaA0
-02: https://unsplash.com/photos/GANqCr1BRTU
-03: https://unsplash.com/photos/nJdwUHmaY8A
-04: https://unsplash.com/photos/PjH_BkzjxTA
-05: https://unsplash.com/photos/BbQLHCpVUqA
+

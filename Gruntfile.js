@@ -48,7 +48,9 @@ module.exports = function(grunt) {
         uglify: {
             source: {
                 files: {
-                    '<%= dist_path %>/js/main.min.js': '<%= app_path %>/js/main.js'
+                    '<%= dist_path %>/js/main.min.js': '<%= app_path %>/js/main.js',
+                    '<%= dist_path %>/js/scrollspy.min.js': '<%= app_path %>/js/scrollspy.js'
+                    
                 }
             }
         },
@@ -70,6 +72,19 @@ module.exports = function(grunt) {
                 files: {
                     '<%= dist_path %>/css/main.min.css': '<%= app_path %>/css/main.css'
                 }
+            }
+        },
+        
+        
+        // IMAGES
+        imagemin: {
+            build: {
+                files: [{
+                    expand: true,
+                    cwd: 'src/',
+                    src: 'images/**/*.{png,jpg}',
+                    dest: 'dist/'
+                }]
             }
         },
         
