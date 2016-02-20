@@ -18,5 +18,14 @@
     "grunt-htmlhint": "^0.9.12-fix",
     "grunt-sass": "^1.1.0",
     "matchdep": "^1.0.0"
+  },
+  "dependencies": {
+    "express": "^4.13.4"
+  },
+  "engines": {
+    "node": ">=0.12.7"
+  },
+  "scripts": {
+    "start": "node server.js"
   }
 }
