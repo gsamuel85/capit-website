@@ -50,7 +50,6 @@ module.exports = function(grunt) {
                 files: {
                     '<%= dist_path %>/js/main.min.js': '<%= app_path %>/js/main.js',
                     '<%= dist_path %>/js/scrollspy.min.js': '<%= app_path %>/js/scrollspy.js'
-                    
                 }
             }
         },

@@ -10,6 +10,7 @@ var stickMenu = function stickMenu() {
 	}
 	else {
 		header.className = "reveal alt";
+
 	}
 };
 
