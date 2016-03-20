@@ -45,11 +45,16 @@ module.exports = function(grunt) {
                 src: ["<%= app_path %>/js/main.js"]
             }
         },
+        concat: {
+            dist: {
+                src: ['<%= app_path %>/js/*.js'],
+                dest: '<%= app_path %>/js/bundle.js',
+            }
+        },
         uglify: {
             source: {
                 files: {
-                    '<%= dist_path %>/js/main.min.js': '<%= app_path %>/js/main.js',
-                    '<%= dist_path %>/js/scrollspy.min.js': '<%= app_path %>/js/scrollspy.js'
+                    '<%= dist_path %>/js/main.min.js': '<%= app_path %>/js/bundle.js'
                 }
             }
         },
@@ -95,7 +100,7 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['<%= app_path %>/js/**/*.js'],
-                tasks: ['jshint']
+                tasks: ['js']
             },
             scss: {
                 files: ['<%= app_path %>/sass/**/*.scss'],
@@ -106,7 +111,7 @@ module.exports = function(grunt) {
         
     });
     
-    grunt.registerTask('js', ['jshint', 'uglify']);
+    grunt.registerTask('js', ['jshint', 'concat', 'uglify']);
     grunt.registerTask('css', ['sass', 'cssmin']);
     
     grunt.registerTask('default', ['htmlhint', 'js', 'css']);

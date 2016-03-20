@@ -1,0 +1,21 @@
+CACHE MANIFEST
+# 2016-03-20
+
+CACHE:
+/index.html
+/index-var1.html
+/js/main.min.js
+/css/main.min.css
+
+/images/logo/logo-nav.png
+/images/logo/logo-lg.png
+/images/logo/favicon.png
+/images/about-01.jpg
+/images/about-02.jpg
+/images/bg.jpg
+/images/contact-bg.png
+/images/what.jpg
+/fonts/fontawesome-webfont.woff2?v=4.4.0
+
+NETWORK:
+*
