@@ -9,8 +9,10 @@ module.exports = function(grunt) {
         
         app_path: 'src',
         dist_path: 'dist',
-        
-        // HTML
+
+        /**
+         * HTML
+         */
         htmlhint: {
             build: {
                 options: {
@@ -26,9 +28,11 @@ module.exports = function(grunt) {
                 src: ['<%= app_path %>/*.html']
             }
         },
-        
-        
-        // JAVASCRIPT
+
+
+        /**
+         * JAVASCRIPT
+         */
         jshint: {
             source: {
                 options: {
@@ -58,9 +62,11 @@ module.exports = function(grunt) {
                 }
             }
         },
-        
-        
-        // CSS
+
+
+        /**
+         * CSS
+         */
         sass: {
             options: {
                 sourceMap: true
@@ -78,9 +84,9 @@ module.exports = function(grunt) {
                 }
             }
         },
-        
-        
-        // IMAGES
+
+
+
         imagemin: {
             build: {
                 files: [{
@@ -91,8 +97,12 @@ module.exports = function(grunt) {
                 }]
             }
         },
-        
-        
+
+
+
+        /**
+         * WATCH TASKS
+         */
         watch: {
             html: {
                 files: ['<%= app_path %>/*.html'],
@@ -106,9 +116,35 @@ module.exports = function(grunt) {
                 files: ['<%= app_path %>/sass/**/*.scss'],
                 tasks: ['sass']
             }
+        },
+
+
+
+        /**
+         * PERFORMANCE OPTIMIZATION
+         */
+        uncss: {
+            dist: {
+                options: {
+                    ignore: ['.active', '#cta', 'ul.actions', 'icon']
+                },
+                files: {
+                    '<%= app_path %>/css/main.css': ['<%= dist_path %>/*.html']
+                }
+            }
+        },
+        criticalcss: {
+            desktop: {
+                options: {
+                    url: 'http://localhost:3000',
+                    filename: 'dist/css/main.min.css',
+                    outputfile: 'critical.css'
+                }
+            }
         }
-        
-        
+
+
+
     });
     
     grunt.registerTask('js', ['jshint', 'concat', 'uglify']);
