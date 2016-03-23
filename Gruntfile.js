@@ -84,6 +84,16 @@ module.exports = function(grunt) {
                 }
             }
         },
+        uncss: {
+            dist: {
+                options: {
+                    ignore: ['.active', '#cta', 'ul.actions', 'icon']
+                },
+                files: {
+                    '<%= dist_path %>/css/main.css': ['<%= dist_path %>/*.html']
+                }
+            }
+        },
 
 
 
@@ -123,16 +133,7 @@ module.exports = function(grunt) {
         /**
          * PERFORMANCE OPTIMIZATION
          */
-        uncss: {
-            dist: {
-                options: {
-                    ignore: ['.active', '#cta', 'ul.actions', 'icon']
-                },
-                files: {
-                    '<%= app_path %>/css/main.css': ['<%= dist_path %>/*.html']
-                }
-            }
-        },
+
         criticalcss: {
             desktop: {
                 options: {
