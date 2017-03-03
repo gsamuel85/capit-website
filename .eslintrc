@@ -1,0 +1,18 @@
+{
+  "extends": "airbnb",
+  "plugins": [
+    "mocha"
+  ],
+  "rules": {
+    "func-names": [
+      "error",
+      "never"
+    ],
+    "linebreak-style": 0,
+    "comma-dangle": [
+      "error",
+      "never"
+    ],
+    "mocha/no-exclusive-tests": "error"
+  }
+}

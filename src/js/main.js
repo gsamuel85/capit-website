@@ -1,4 +1,7 @@
 'use strict';
+// TODO: Update Linting
+// TODO: ES6
+
 
 // Show / hide menu on scroll
 var stickMenu = function stickMenu() {
@@ -19,6 +22,7 @@ window.addEventListener("scroll", function(e) {
 });
 
 
+// TODO: Remove form
 // Handle form submission
 var form = document.getElementById("contact-form");
 

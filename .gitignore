@@ -1,5 +1,6 @@
 # Cloud9 config
 .c9/
+.idea/
 
 # Node modules
 node_modules/

@@ -4,6 +4,7 @@
   "description": "2016 version of Capit Mobile's website",
   "main": "server.js",
   "scripts": {
+    "lint": "eslint src/ --ext .js --ext .jsx",
     "start": "node server.js"
   },
   "author": "Guy Samuel | Capit Mobile",
