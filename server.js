@@ -1,12 +1,14 @@
 'use strict';
 
 // TODO: Check NewRelic
-// require('newrelic');
+require('newrelic');
 
 var express = require("express");
 var compression = require("compression");
+var helmet = require("helmet");
 
 var app = express();
+app.use(helmet());
 app.use(compression());
 app.use(express.static(__dirname + "/dist"));
 

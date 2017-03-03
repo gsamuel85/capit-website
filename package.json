@@ -26,6 +26,7 @@
   "dependencies": {
     "compression": "^1.6.1",
     "express": "^4.13.4",
+    "helmet": "^3.4.1",
     "newrelic": "^1.25.5"
   },
   "engines": {
